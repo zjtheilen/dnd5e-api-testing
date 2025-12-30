@@ -1,4 +1,4 @@
-from helper import get_class
+from api_client import get_class
 
 BASE_URL = "https://www.dnd5eapi.co/api"
 

@@ -1,5 +1,5 @@
 import pytest
-from helper import get_monster
+from api_client import get_monster
 
 @pytest.mark.parametrize("params", [
     {"unexpected": "test"},
@@ -12,7 +12,6 @@ def test_monsters_endpoint_handles_unexpected_parameters(params):
 
     assert response.status_code == 200
 
-    # should still see a valid JSON
     data = response.json()
     assert "results" in data
     assert isinstance(data["results"], list)

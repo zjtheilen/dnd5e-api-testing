@@ -1,5 +1,5 @@
 import pytest
-from helper import get_spell_by_index, assert_spell_schema
+from api_client import get_spell_by_index, assert_spell_schema
 
 @pytest.mark.parametrize("invalid_spell", [
     "invalid",
