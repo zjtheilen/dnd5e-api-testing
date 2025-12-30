@@ -38,3 +38,4 @@ From the project root directory:
 
 ```bash
 pytest
+```
