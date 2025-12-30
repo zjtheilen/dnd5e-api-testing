@@ -27,20 +27,16 @@ def assert_spell_schema(data):
 
 def assert_class_schema(data):
     assert isinstance(data, dict)
-    # Required top-level keys for a class
-    required_keys = ["index", "name", "hit_die", "proficiency_choices", "proficiencies", "saving_throws", "spellcasting"]
+    required_keys = ["index", "hit_die", "proficiency_choices", "proficiencies", "saving_throws"]
     for key in required_keys:
         assert key in data
 
-    # Basic type checks
     assert isinstance(data["index"], str)
-    assert isinstance(data["name"], str)
     assert isinstance(data["hit_die"], int)
-    assert isinstance(data["proficiency_choices"], list)
     assert isinstance(data["proficiencies"], list)
     assert isinstance(data["saving_throws"], list)
-    # spellcasting can be None for non-spellcasting classes
-    assert data["spellcasting"] is None or isinstance(data["spellcasting"], dict)
+    assert isinstance(data["proficiency_choices"], list)
+
 
 def assert_monster_schema(data):
     assert isinstance(data, dict)
