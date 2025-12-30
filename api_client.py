@@ -20,3 +20,19 @@ def assert_spell_schema(data):
     assert "level" in data
     assert isinstance(data["name"], str)
     assert isinstance(data["level"], int)
+
+def assert_class_schema(data):
+    assert isinstance(data, dict)
+    assert "index" in data
+    assert "name" in data
+    assert "hit_die" in data
+    assert isinstance(data["name"], str)
+    assert isinstance(data["hit_die"], int)
+
+def assert_monster_schema(data):
+    assert isinstance(data, dict)
+    assert "index" in data
+    assert "name" in data
+    assert "challenge_rating" in data
+    assert isinstance(data["name"], str)
+    assert isinstance(data["challenge_rating"], (int, float))
