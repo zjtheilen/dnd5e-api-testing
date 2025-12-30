@@ -1,0 +1,44 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+bin/
+build/
+develop-eggs/
+dist/
+lib/
+lib64/
+
+# Editor/IDE-specific files
+.vscode/        # For VS Code
+.idea/          # For PyCharm/IntelliJ
+*.sublime-*     # For Sublime Text
+.DS_Store       # For macOS
+
+# Sensitive files/environment variables
+.env            # Environment variables
+.flaskenv       # Flask specific environment variables
+secret.key
+*.log           # Log files
+
+# Testing and coverage
+.tox/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# Packaging
+*.egg-info/
+.installed.cfg
+*.egg
+PIP_DELETE_THIS_DIRECTORY.txt
+pip-log.txt
+
+
+/portfolio_documents
