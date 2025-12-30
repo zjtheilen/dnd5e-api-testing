@@ -1,7 +1,5 @@
-import requests
 import pytest
-
-BASE_URL = "https://www.dnd5eapi.co/api"
+from helper import get_monster
 
 @pytest.mark.parametrize("params", [
     {"unexpected": "test"},
@@ -10,7 +8,7 @@ BASE_URL = "https://www.dnd5eapi.co/api"
     {"random_param": "dragon"}
 ])
 def test_monsters_endpoint_handles_unexpected_parameters(params):
-    response = requests.get(f"{BASE_URL}/monsters", params=params)
+    response = get_monster(params=params)
 
     assert response.status_code == 200
 
