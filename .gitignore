@@ -40,3 +40,5 @@ coverage.xml
 PIP_DELETE_THIS_DIRECTORY.txt
 pip-log.txt
 
+reports/
+*.html
