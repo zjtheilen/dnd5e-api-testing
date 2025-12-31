@@ -1,11 +1,13 @@
 ## Objective:
 Create structured test cases for selected D&D API endpoints to verify correct functionality, data integrity, and error handling. Ensure tests are repeatable and clearly documented for both manual review and automated execution.
+
 ### Endpoints Selected:
 * Classes (/api/classes)
 * Races (/api/races)
 * Spells (/api/spells)
 * Monsters (/api/monsters)
 * Equipment (/api/equipment)
+
 ### Test Types Applied:
 * Functional Testing: Validate endpoint responses against expected status codes, required fields, and correct data types.
 * Regression Testing: Ensure repeated requests return consistent results, and no existing functionality breaks when new requests are tested.
@@ -23,9 +25,17 @@ Example Test Case Structure:
 * Detailed test case documentation (ID, endpoint, test type, steps, expected result, notes)
 * Notes on assumptions, scope decisions, and limitations
 * Mapping of test cases to endpoint functionality
+
 ### Tools & Skills Demonstrated:
 * Test case design for APIs
 * Functional, regression, and exploratory testing
 * Planning for automated test scripts in Python (or Playwright, if preferred)
 * Documentation best practices for QA workflows
 
+## Implementation Status
+Automated test coverage currently includes:
+- Classes
+- Spells
+- Monsters
+
+Races and Equipment remain planned but were deprioritized to focus on deeper schema validation, exploratory testing, and defect documentation for core endpoints.
